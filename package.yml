@@ -1,0 +1,18 @@
+name        : dri2proto
+version     : 2.8
+release     : 4
+source      :
+    - http://xorg.freedesktop.org/releases/individual/proto/dri2proto-2.8.tar.gz : 7e65b031eaa6ebe23c75583d4abd993ded7add8009b4200a4db7aa10728b0f61
+license     :
+    - MIT
+summary     : Direct Rendering Infrastructure 2 Extension
+component   : xorg.proto
+patterns    : /
+description : |
+    This extension defines a protocol to securely allow user applications to access the video hardware without requiring data to be passed through the X server.
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
